@@ -1,0 +1,60 @@
+{
+  "model": "InceptionResnetV1 (pretrained='vggface2')",
+  "preprocessing": "MTCNN detection, centre-nearest face, 160x160 crop (margin 14)",
+  "mtcnn_detected": 7701,
+  "mtcnn_fallback_center_crop": 0,
+  "dataset": "LFW (Labeled Faces in the Wild) 6,000 Pairs",
+  "total_pairs": 6000,
+  "genuine_pairs": 3000,
+  "imposter_pairs": 3000,
+  "genuine_sim_mean": 0.7687,
+  "genuine_sim_std": 0.1128,
+  "genuine_sim_min": 0.0464,
+  "genuine_sim_max": 0.976,
+  "imposter_sim_mean": 0.0233,
+  "imposter_sim_std": 0.1533,
+  "imposter_sim_min": -0.4467,
+  "imposter_sim_max": 0.6649,
+  "roc_auc": 0.99943,
+  "roc_auc_ci_95": [
+    0.99899,
+    0.99976
+  ],
+  "eer": 0.0065,
+  "eer_ci_95": [
+    0.0045,
+    0.00917
+  ],
+  "eer_threshold": 0.4011,
+  "tar_at_far_01_percent": 98.633,
+  "tar_at_far_01_ci_95": [
+    83.609,
+    99.16
+  ],
+  "threshold_at_far_01": 0.4602,
+  "actual_far_at_far_01": 0.1,
+  "theta_068_metrics": {
+    "threshold": 0.68,
+    "gar_percent": 80.9,
+    "frr_percent": 19.1,
+    "far_percent": 0.0,
+    "imposter_accept_count": 0,
+    "buddy_proxy_mitigation_percent": 100.0
+  },
+  "theta_076_metrics": {
+    "threshold": 0.76,
+    "gar_percent": 60.4,
+    "frr_percent": 39.6,
+    "far_percent": 0.0,
+    "imposter_accept_count": 0,
+    "buddy_proxy_mitigation_percent": 100.0
+  },
+  "theta_eer_metrics": {
+    "threshold": 0.4011,
+    "gar_percent": 99.333,
+    "frr_percent": 0.667,
+    "far_percent": 0.633,
+    "imposter_accept_count": 19,
+    "buddy_proxy_mitigation_percent": 99.367
+  }
+}

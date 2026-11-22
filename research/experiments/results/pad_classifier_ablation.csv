@@ -1,0 +1,6 @@
+classifier,roc_auc,eer_pct,brier,infer_ms_per_sample
+Logistic regression,0.8407,23.04,0.1445,0.0004
+RBF-SVM (Platt),0.9204,14.81,0.0976,0.0913
+Random forest (300),0.9316,13.85,0.0971,0.0477
+HGB (uncalibrated),0.9281,14.37,0.0931,0.0041
+HGB + Platt (proposed),0.9307,14.24,0.0914,0.0135

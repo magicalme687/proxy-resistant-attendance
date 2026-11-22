@@ -1,0 +1,13 @@
+partition_type,attenuation_range_db,gate_radius_m,cutoff_rssi_dbm,num_trials,false_accepts,leakage_rate_pct,mitigation_pct,ci_95_low_pct,ci_95_high_pct
+Drywall (Gypsum 10cm),3.0-6.0,10.0,-86.0,1000,664,66.4,33.6,63.38,69.33
+Drywall (Gypsum 10cm),3.0-6.0,6.0,-80.0,1000,355,35.5,64.5,32.53,38.56
+Drywall (Gypsum 10cm),3.0-6.0,4.0,-75.3,1000,208,20.8,79.2,18.32,23.45
+Brick Masonry (15cm),7.0-12.0,10.0,-86.0,1000,378,37.8,62.2,34.78,40.89
+Brick Masonry (15cm),7.0-12.0,6.0,-80.0,1000,205,20.5,79.5,18.04,23.14
+Brick Masonry (15cm),7.0-12.0,4.0,-75.3,1000,88,8.8,91.2,7.12,10.73
+Reinforced Concrete (20cm),12.0-18.0,10.0,-86.0,1000,200,20.0,80.0,17.56,22.62
+Reinforced Concrete (20cm),12.0-18.0,6.0,-80.0,1000,66,6.6,93.4,5.14,8.32
+Reinforced Concrete (20cm),12.0-18.0,4.0,-75.3,1000,12,1.2,98.8,0.62,2.09
+Open Doorway / Thin Panel,1.0-4.0,10.0,-86.0,1000,794,79.4,20.6,76.76,81.87
+Open Doorway / Thin Panel,1.0-4.0,6.0,-80.0,1000,438,43.8,56.2,40.7,46.94
+Open Doorway / Thin Panel,1.0-4.0,4.0,-75.3,1000,264,26.4,73.6,23.69,29.25

@@ -1,0 +1,7 @@
+architecture,gar,s2,s3,s4,s5,s6,s4_doorway,mean_mitigation,bsi
+BLE only,0.9805,1.0,1.0,0.8,0.0,0.0,0.206,0.56,0.7129
+Rotating QR only,0.9895,1.0,0.0,1.0,0.0,0.0,0.0,0.4,0.5697
+Face only (no PAD),0.9933,0.0,0.0,0.0,0.9937,0.0,0.0,0.1987,0.3312
+BLE + face (no PAD),0.974,1.0,1.0,0.8,0.9937,0.0,0.206,0.7587,0.853
+"Proposed tri-modal, PAD at EER threshold",0.8264,1.0,1.0,1.0,0.9937,0.8576,0.206,0.9703,0.8926
+"Proposed tri-modal, strict PAD threshold",0.669,1.0,1.0,1.0,0.9937,0.9504,0.206,0.9888,0.7981

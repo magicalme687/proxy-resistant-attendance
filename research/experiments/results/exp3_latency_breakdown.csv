@@ -1,0 +1,10 @@
+stage,median_ms,iqr_ms
+Stage 0: BLE HMAC Cryptographic Check,0.0091,0.0001
+Stage 1: Spatial Log-Distance Boundary Gate,0.0012,0.0
+Stage 2: 16-D Passive PAD Extraction + Inference,7.5018,1.3417
+Stage 3: Pairwise 512-D Cosine Inner-Product Matching,0.0012,0.001
+Total Gateway In-Memory Latency (Excluding Disk Commit),7.5147,1.3426
+Alternative: Lightweight 3-Feature Heuristic PAD,1.5802,0.7622
+Alternative Total Gateway (Heuristic PAD),1.5916,0.7608
+Stage 4: Indexed SQLite ACID Transaction (Measured Disk Commit),18.9758,1.4633
+Stage 4 (WAL Buffered Mode): Indexed SQLite Write,5.2068,0.4402

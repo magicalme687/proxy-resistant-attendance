@@ -1,0 +1,84 @@
+{
+  "benchmark": "Adaptive_Adversaries_Mode_Comparison",
+  "parameter_source": "default assumptions (no testbed data yet)",
+  "parameters": {
+    "rssi0_dbm": -59.0,
+    "gamma": 2.7,
+    "sigma_db": 2.5,
+    "rssi_gate_dbm": -86.0,
+    "genuine_dist_m": [
+      0.8,
+      8.0
+    ],
+    "p_qr_decode": 0.9895,
+    "net_median_ms": 45.0,
+    "net_sigma_log": 0.5,
+    "sign_ms": [
+      30.0,
+      80.0
+    ],
+    "app_relay_ms": [
+      5.0,
+      20.0
+    ],
+    "adv_interval_ms": 100.0,
+    "p_adv_rx": 0.9,
+    "rtt_deadline_ms": 200.0,
+    "p_coloc_detect": 0.65,
+    "relay_rtt_model": "websocket_components",
+    "relay_rtt_normal_ms": [
+      425.0,
+      65.0
+    ],
+    "websocket_stage_ranges_ms": [
+      [
+        35,
+        60
+      ],
+      [
+        45,
+        80
+      ],
+      [
+        10,
+        20
+      ],
+      [
+        45,
+        80
+      ],
+      [
+        35,
+        60
+      ]
+    ],
+    "genuine_rtt_model": "measured_lognormal",
+    "genuine_rtt_median_ms": 104.0,
+    "genuine_rtt_p99_ms": 210.0,
+    "coloc_fp_rate": 0.0235
+  },
+  "num_seeds": 10,
+  "trials_per_seed": 2000,
+  "gar_c_mean": 0.8237,
+  "gar_i_mean": 0.832,
+  "gar_ip_mean": 0.7985,
+  "mit_a10_i_mean": 0.0171,
+  "mit_a10_ip_mean": 0.9911,
+  "genuine_rtt_median_mean": 103.693,
+  "relay_rtt_median_mean": 234.7537,
+  "relay_rtt_pass_mean": 0.0249,
+  "genuine_rtt_pass_mean": 0.9851,
+  "gar_c_std": 0.0066,
+  "gar_i_std": 0.008,
+  "gar_ip_std": 0.0093,
+  "mit_a10_i_std": 0.0026,
+  "mit_a10_ip_std": 0.0022,
+  "genuine_rtt_median_std": 0.6781,
+  "relay_rtt_median_std": 0.5087,
+  "relay_rtt_pass_std": 0.0034,
+  "genuine_rtt_pass_std": 0.0025,
+  "sensitivity_a10_mitigation_range": [
+    0.0,
+    1.0
+  ]
+}

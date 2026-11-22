@@ -1,0 +1,28 @@
+Copyright (c) 2026 Yash Parashar, Ritumbara Chauhan, Nishtha Parashar, Keshav,
+Khushi Shrivastava, and Krishna Tirole. All rights reserved.
+
+This repository accompanies the manuscript "Proxy-Resistant Smartphone
+Attendance Using Combined Optical, Bluetooth Low Energy, and Face
+Verification", submitted for peer review.
+
+Permission is granted only to view and run the contents of this repository
+for the purpose of reviewing the manuscript and verifying the results it
+reports.
+
+No other permission is granted. Without prior written permission from the
+authors, you may not copy, modify, merge, publish, distribute, sublicense,
+or sell any part of this repository, use it in any product or service,
+use it to build an attendance or authentication system, or reproduce its
+content, results, figures, or text in another publication.
+
+The authors may release this repository under a different license after
+the manuscript is published.
+
+THE CONTENTS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+OTHER LIABILITY ARISING FROM THE USE OF THESE CONTENTS.
+
+Third-party data: the LFW pair lists in research/datasets/lfw/ and the face
+image in research/experiments/data/ come from the public LFW dataset, and
+research/experiments/results/celeba_features_cache.npz is derived from the
+public CelebA-Spoof dataset. They remain under their original terms.

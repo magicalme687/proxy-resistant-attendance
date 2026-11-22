@@ -1,0 +1,7 @@
+adversarial_vector,mode_c,mode_i,mode_i_plus
+Genuine system GAR (S1),82.37% ± 0.66%,83.20% ± 0.80%,79.85% ± 0.93%
+A6 fast token forwarding,0.00% (vulnerable),blocked by design*,blocked by design*
+A7 RSSI forgery,0.00% (vulnerable),blocked by design*,blocked by design*
+A8 SDR link-layer relay,LOS-dependent†,LOS-dependent†,LOS-dependent†
+A9 own-face relay,0.00% (vulnerable),blocked by design*,blocked by design*
+A10 commodity chirp relay,0.00% (vulnerable),1.71% ± 0.26%,99.11% ± 0.22%

@@ -1,0 +1,115 @@
+{
+  "benchmark": "Scalability_Concurrency_Stress_Test",
+  "num_repetitions": 100,
+  "vectorized_kernel_microseconds": 24.2,
+  "vectorized_kernel_iqr_microseconds": 0.9,
+  "sqlite_commit_measured_ms": 18.9758,
+  "sqlite_commit_iqr_ms": 1.4633,
+  "sqlite_commit_wal_measured_ms": 5.2068,
+  "sqlite_commit_wal_iqr_ms": 0.4402,
+  "pipeline_microbenchmarks": [
+    {
+      "stage": "Stage 0: BLE HMAC Cryptographic Check",
+      "median_ms": 0.0091,
+      "iqr_ms": 0.0001
+    },
+    {
+      "stage": "Stage 1: Spatial Log-Distance Boundary Gate",
+      "median_ms": 0.0012,
+      "iqr_ms": 0.0
+    },
+    {
+      "stage": "Stage 2: 16-D Passive PAD Extraction + Inference",
+      "median_ms": 7.5018,
+      "iqr_ms": 1.3417
+    },
+    {
+      "stage": "Stage 3: Pairwise 512-D Cosine Inner-Product Matching",
+      "median_ms": 0.0012,
+      "iqr_ms": 0.001
+    },
+    {
+      "stage": "Total Gateway In-Memory Latency (Excluding Disk Commit)",
+      "median_ms": 7.5147,
+      "iqr_ms": 1.3426
+    },
+    {
+      "stage": "Alternative: Lightweight 3-Feature Heuristic PAD",
+      "median_ms": 1.5802,
+      "iqr_ms": 0.7622
+    },
+    {
+      "stage": "Alternative Total Gateway (Heuristic PAD)",
+      "median_ms": 1.5916,
+      "iqr_ms": 0.7608
+    },
+    {
+      "stage": "Stage 4: Indexed SQLite ACID Transaction (Measured Disk Commit)",
+      "median_ms": 18.9758,
+      "iqr_ms": 1.4633
+    },
+    {
+      "stage": "Stage 4 (WAL Buffered Mode): Indexed SQLite Write",
+      "median_ms": 5.2068,
+      "iqr_ms": 0.4402
+    }
+  ],
+  "cohort_benchmarks": [
+    {
+      "cohort_size_N": 10,
+      "sequential_median_ms": 0.081,
+      "sequential_iqr_ms": 0.015,
+      "vectorized_median_ms": 0.058,
+      "vectorized_iqr_ms": 0.004,
+      "speedup_ratio_median": 1.4
+    },
+    {
+      "cohort_size_N": 25,
+      "sequential_median_ms": 0.191,
+      "sequential_iqr_ms": 0.029,
+      "vectorized_median_ms": 0.134,
+      "vectorized_iqr_ms": 0.021,
+      "speedup_ratio_median": 1.43
+    },
+    {
+      "cohort_size_N": 50,
+      "sequential_median_ms": 0.384,
+      "sequential_iqr_ms": 0.066,
+      "vectorized_median_ms": 0.266,
+      "vectorized_iqr_ms": 0.092,
+      "speedup_ratio_median": 1.44
+    },
+    {
+      "cohort_size_N": 75,
+      "sequential_median_ms": 0.575,
+      "sequential_iqr_ms": 0.175,
+      "vectorized_median_ms": 0.396,
+      "vectorized_iqr_ms": 0.139,
+      "speedup_ratio_median": 1.45
+    },
+    {
+      "cohort_size_N": 100,
+      "sequential_median_ms": 0.772,
+      "sequential_iqr_ms": 0.158,
+      "vectorized_median_ms": 0.525,
+      "vectorized_iqr_ms": 0.219,
+      "speedup_ratio_median": 1.47
+    },
+    {
+      "cohort_size_N": 150,
+      "sequential_median_ms": 1.16,
+      "sequential_iqr_ms": 0.579,
+      "vectorized_median_ms": 0.8,
+      "vectorized_iqr_ms": 0.285,
+      "speedup_ratio_median": 1.45
+    },
+    {
+      "cohort_size_N": 200,
+      "sequential_median_ms": 1.571,
+      "sequential_iqr_ms": 0.525,
+      "vectorized_median_ms": 1.066,
+      "vectorized_iqr_ms": 0.342,
+      "speedup_ratio_median": 1.47
+    }
+  ]
+}

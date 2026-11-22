@@ -1,0 +1,77 @@
+{
+  "rows": [
+    {
+      "architecture": "BLE only",
+      "gar": 0.9805,
+      "s2": 1.0,
+      "s3": 1.0,
+      "s4": 0.8,
+      "s5": 0.0,
+      "s6": 0.0,
+      "s4_doorway": 0.206,
+      "mean_mitigation": 0.56,
+      "bsi": 0.7129
+    },
+    {
+      "architecture": "Rotating QR only",
+      "gar": 0.9895,
+      "s2": 1.0,
+      "s3": 0.0,
+      "s4": 1.0,
+      "s5": 0.0,
+      "s6": 0.0,
+      "s4_doorway": 0.0,
+      "mean_mitigation": 0.4,
+      "bsi": 0.5697
+    },
+    {
+      "architecture": "Face only (no PAD)",
+      "gar": 0.9933,
+      "s2": 0.0,
+      "s3": 0.0,
+      "s4": 0.0,
+      "s5": 0.9937,
+      "s6": 0.0,
+      "s4_doorway": 0.0,
+      "mean_mitigation": 0.1987,
+      "bsi": 0.3312
+    },
+    {
+      "architecture": "BLE + face (no PAD)",
+      "gar": 0.974,
+      "s2": 1.0,
+      "s3": 1.0,
+      "s4": 0.8,
+      "s5": 0.9937,
+      "s6": 0.0,
+      "s4_doorway": 0.206,
+      "mean_mitigation": 0.7587,
+      "bsi": 0.853
+    },
+    {
+      "architecture": "Proposed tri-modal, PAD at EER threshold",
+      "gar": 0.8264,
+      "s2": 1.0,
+      "s3": 1.0,
+      "s4": 1.0,
+      "s5": 0.9937,
+      "s6": 0.8576,
+      "s4_doorway": 0.206,
+      "mean_mitigation": 0.9703,
+      "bsi": 0.8926
+    },
+    {
+      "architecture": "Proposed tri-modal, strict PAD threshold",
+      "gar": 0.669,
+      "s2": 1.0,
+      "s3": 1.0,
+      "s4": 1.0,
+      "s5": 0.9937,
+      "s6": 0.9504,
+      "s4_doorway": 0.206,
+      "mean_mitigation": 0.9888,
+      "bsi": 0.7981
+    }
+  ],
+  "independence_assumed": true
+}

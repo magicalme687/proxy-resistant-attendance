@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+.venv/
+
+# Secrets and local data
+.env
+*.db
+temp_face.jpg
+temp_verify.jpg
+
+# Datasets (public, large; download separately)
+research/datasets/lfw/lfw_funneled/
+research/datasets/lfw/*.tgz
+research/datasets/celeba_spoof/*.parquet
+
+# Node (Word build)
+node_modules/
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+**/.idea/
+**/.vscode/
+
+# LaTeX build files
+*.aux
+*.log
+*.blg
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+!manuscript/latex/main.bbl
+
+# Word build intermediates
+manuscript/word_build/content.json
+manuscript/word_build/*.docx
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

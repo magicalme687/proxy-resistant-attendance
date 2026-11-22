@@ -1,0 +1,14 @@
+input,value,type,source
+Face match pass rate (theta_EER),0.9933299999999999,M,"LFW 6,000 pairs, InceptionResnetV1 + MTCNN"
+Buddy-proxy acceptance (FAR at theta_EER),0.00633,M,LFW imposter pairs
+"PAD bona-fide pass (1-BPCER, tau_EER)",0.8575,M,"CelebA-Spoof shard 0, 5-fold CV"
+"PAD spoof rejection (1-APCER, tau_EER)",0.8576,M,"CelebA-Spoof shard 0, 5-fold CV"
+"PAD spoof rejection at strict tau",0.9504,M,"CelebA-Spoof shard 0, 5-fold CV"
+In-room pass rate of BLE gate,0.9805,S,Exp. 1 channel simulation (d up to 8 m)
+QR decode success rate (optical),0.9895,A,assumed; to be measured in pilot (Campaign 4)
+"Rejection by RF gate alone, concrete wall, R=10 m",0.8,S,"Exp. 1 extension, Table VI"
+"Rejection by RF gate alone, open doorway, R=10 m",0.20599999999999996,S,"Exp. 1 extension, Table VI"
+"Remote relays (S2,S3) cannot obtain the in-room BLE frame",1.0,A,honest client RSSI (Mode-C) / station-measured (Mode-I)
+Solid partition hides the screen from outside,1.0,A,geometry assumption; verified per room in Campaign 1
+Spoof acceptance with no PAD stage,1.0,A,conservative: a photo of the enrolled student matches
+Gate outcomes independent,1.0,A,to be checked against pilot joint pass rate

@@ -1,0 +1,46 @@
+{
+  "dataset": "CelebA-Spoof Test Partition 0",
+  "sample_count": 6678,
+  "live_count": 2021,
+  "spoof_count": 4657,
+  "baseline_uncalibrated_heuristics": {
+    "apcer_pct": 58.19,
+    "bpcer_pct": 83.57,
+    "acer_pct": 70.88,
+    "roc_auc": 0.4764,
+    "eer_pct": 52.9,
+    "eer_threshold": 0.8938
+  },
+  "proposed_calibrated_multispectral_classifier": {
+    "features_dim": 16,
+    "validation_scheme": "5-Fold Stratified Cross-Validation",
+    "classifier": "CalibratedClassifierCV(HistGradientBoostingClassifier(max_iter=100), method=sigmoid [Platt], cv=3) fitted inside each outer fold",
+    "roc_auc": 0.9307,
+    "roc_auc_ci_95": [
+      0.924,
+      0.9373
+    ],
+    "eer_pct": 14.24,
+    "eer_ci_95": [
+      13.32,
+      15.2
+    ],
+    "eer_threshold": 0.2979,
+    "eer_operating_point": {
+      "apcer_pct": 14.24,
+      "bpcer_pct": 14.25,
+      "acer_pct": 14.24
+    },
+    "high_security_operating_point": {
+      "threshold": 0.6011,
+      "apcer_pct": 4.96,
+      "bpcer_pct": 30.58,
+      "acer_pct": 17.77
+    },
+    "latency": {
+      "feature_extraction_ms_median": 7.553,
+      "classifier_inference_ms_mean": 0.049,
+      "total_cpu_latency_ms": 7.602
+    }
+  }
+}

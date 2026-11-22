@@ -1,0 +1,88 @@
+{
+  "benchmark": "Spatiotemporal_BLE_Threat_Mitigation",
+  "num_total_trials": 10000,
+  "threat_scenario_metrics": {
+    "A_Legitimate_InRoom": {
+      "total_trials": 2000,
+      "ground_truth": "GENUINE",
+      "legacy_accepted": 2000,
+      "proposed_accepted": 1961,
+      "legacy_FRR": 0.0,
+      "proposed_FRR": 0.0195,
+      "mitigation_rate": 0.9805
+    },
+    "B_Adjacent_Wall_Bleed": {
+      "total_trials": 2000,
+      "ground_truth": "ATTACK",
+      "legacy_accepted": 2000,
+      "proposed_accepted": 0,
+      "legacy_FAR": 1.0,
+      "proposed_FAR": 0.0,
+      "attack_mitigation_rate": 1.0
+    },
+    "C_Remote_Relay_Messaging": {
+      "total_trials": 2000,
+      "ground_truth": "ATTACK",
+      "legacy_accepted": 2000,
+      "proposed_accepted": 0,
+      "legacy_FAR": 1.0,
+      "proposed_FAR": 0.0,
+      "attack_mitigation_rate": 1.0
+    },
+    "D_Cryptographic_Brute_Force": {
+      "total_trials": 2000,
+      "ground_truth": "ATTACK",
+      "legacy_accepted": 0,
+      "proposed_accepted": 0,
+      "legacy_FAR": 0.0,
+      "proposed_FAR": 0.0,
+      "attack_mitigation_rate": 1.0
+    },
+    "E_Replay_Harvested_Token": {
+      "total_trials": 2000,
+      "ground_truth": "ATTACK",
+      "legacy_accepted": 2000,
+      "proposed_accepted": 0,
+      "legacy_FAR": 1.0,
+      "proposed_FAR": 0.0,
+      "attack_mitigation_rate": 1.0
+    }
+  },
+  "epoch_ablation": [
+    {
+      "epoch_interval_sec": 2,
+      "relay_attack_block_rate": 0.974,
+      "brute_force_prob": 6.98e-10,
+      "estimated_pdr": 0.9,
+      "bandwidth_overhead_bytes_per_min": 390
+    },
+    {
+      "epoch_interval_sec": 4,
+      "relay_attack_block_rate": 0.874,
+      "brute_force_prob": 6.98e-10,
+      "estimated_pdr": 0.95,
+      "bandwidth_overhead_bytes_per_min": 195
+    },
+    {
+      "epoch_interval_sec": 8,
+      "relay_attack_block_rate": 0.69,
+      "brute_force_prob": 6.98e-10,
+      "estimated_pdr": 0.975,
+      "bandwidth_overhead_bytes_per_min": 97
+    },
+    {
+      "epoch_interval_sec": 15,
+      "relay_attack_block_rate": 0.362,
+      "brute_force_prob": 6.98e-10,
+      "estimated_pdr": 0.987,
+      "bandwidth_overhead_bytes_per_min": 52
+    },
+    {
+      "epoch_interval_sec": 30,
+      "relay_attack_block_rate": 0.0,
+      "brute_force_prob": 6.98e-10,
+      "estimated_pdr": 0.993,
+      "bandwidth_overhead_bytes_per_min": 26
+    }
+  ]
+}
